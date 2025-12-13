@@ -23,9 +23,6 @@ export class User {
   @Column({ default: 'user' })
   role: 'user' | 'admin' | 'vet';
 
-  @Column({ nullable: true })
-  refreshToken?: string; // hashed refresh token (optional)
-
   @CreateDateColumn()
   createdAt: Date;
 
